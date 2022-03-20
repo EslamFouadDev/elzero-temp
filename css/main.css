@@ -63,6 +63,13 @@ ul {
     padding: 10px 20px;
     z-index: 1;
 }
+@media (max-width: 767px) {
+    .main-heading {
+        font-size: 18px;
+        padding: 10px 20px;
+
+    }
+}
 .main-heading:hover {
     animation-name: bkg-color;
     animation-delay: .3s;
@@ -467,7 +474,7 @@ nav .container .links li .mega-menu .mega-links li a {
 }
 .features .container .box .cover-img img{
     max-width: 100%;
-    min-width: 300px;
+    min-width: 280px;
 }
 .features .container .box .content {
 
@@ -698,7 +705,7 @@ nav .container .links li .mega-menu .mega-links li a {
     background-color: white;
     box-shadow: 0 12px 20px 0 rgb(0 0 0 / 13%), 0 2px 4px 0 rgb(0 0 0 / 12%);
     flex: 1;
-    min-width: 300px;
+    min-width: 280px;
     text-align: center;
     counter-increment: test;
     transition: transform var(--main-transition);
@@ -916,6 +923,11 @@ nav .container .links li .mega-menu .mega-links li a {
     justify-content: center;
     gap: 20px;
 }
+@media (max-width: 767px) {
+    .events .container .content .count-down {
+        gap: 10px;
+    }
+}
 .events .container .content .count-down .unit {
     border: 1px solid #ccc;
     flex-basis: 80px;
@@ -983,14 +995,18 @@ nav .container .links li .mega-menu .mega-links li a {
 }
 @media (max-width: 767px) {
     .events .container .subscribe form {
-        background-color: #e4e4e4;
-        padding: 5px;
+        width: auto;
+        background-color: transparent;
+        padding: 0px;
     }
     .events .container .subscribe input[type=email]{
-        width: 220px;
+        width: 100%;
         margin-right: 5px;
+        border: 1px solid #d3d3d3;
     }
     .events .container .subscribe input[type=submit]{
+        display: block;
+        margin: 20px auto 0;
         padding: 20px 20px;
     }
 }
@@ -1015,7 +1031,7 @@ nav .container .links li .mega-menu .mega-links li a {
     box-shadow: 1px 0 10px #cdcdcdb3,
     -1px 0 10px #cdcdcdb3;
     flex: 1;
-    min-width: 300px
+    min-width: 280px
 }
 .pricing .container .pricing-plan.recommended {
     position: relative;
